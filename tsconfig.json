@@ -1,33 +1,33 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "composite": false,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "inlineSources": false,
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
-    "skipLibCheck": true,
-    "strict": true,
     "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": [
+      "DOM",
+      "ESNext",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "outDir": "dist",
     "rootDir": "src",
-    "sourceMap": true,
-    "jsx": "react-jsx",
-    /* AND if you're building for a library: */
-    "declaration": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
     // tailwind & postcss
     "baseUrl": ".",
     "paths": {
-      "@/*": [
+      "@": [
         "./src/*"
       ]
     },
   },
+  "include": [
+    "./src/**/*"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,9 +2,9 @@
 
 import type { PropsWithChildren } from "react";
 
-import { Button } from "@/components/ui/button";
-import { DialogFullPageContent } from "@/components/ui/dialog";
-import { DialogTitle } from "@/components/ui/dialog";
+import { Button } from "./button";
+import { DialogFullPageContent } from "./dialog";
+import { DialogTitle } from "./dialog";
 
 interface FullScreenModalProps extends PropsWithChildren {
 	title: string;
